@@ -10,7 +10,9 @@ function App() {
             Hello world from Haonan Lu!
           </p>
           <a className="App-navi" href="labs/a2/index.html">Assignment 2
-            Labs</a>
+            HTML</a>
+          <a className="App-navi" href="labs/a3/index.html">Assignment 3
+            CSS</a>
           <a className="App-navi" href="tuiter/navigation.html">Tuiter</a>
           <a
               className="App-link"

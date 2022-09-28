@@ -1,0 +1,12 @@
+.wd-wrap {
+  border: 1px rgb(47, 51, 54) solid;
+}
+
+.wd-padding {
+  padding: 0 16px;
+}
+
+.wd-gray-13 {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}

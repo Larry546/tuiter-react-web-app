@@ -1,0 +1,140 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial;
+}
+
+.wd-search-wrap {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.wd-input-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 10%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: darkgray;
+}
+
+.wd-input {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 100%;
+  width: 80%;
+  background-color: darkgray;
+  padding: 0;
+  margin-right: 12px;
+  border: 0;
+  font-size: 18px;
+}
+
+.wd-input::placeholder {
+  color: lightgray;
+}
+
+.wd-gear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  font-size: 2em;
+  color: rgb(29, 161, 242);
+}
+
+.wd-nav-wrap {
+
+}
+
+.wd-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: rgb(110, 118, 125);
+}
+
+.wd-nav li {
+  display: inline-block;
+  height: 30px;
+}
+
+.wd-nav-selected {
+  color: rgb(29, 161, 242);
+  border-bottom: 4px solid rgb(29, 161, 242);
+}
+
+.wd-divide {
+  background-color: #17181c;
+  height: 15px;
+  border-top: 3px solid #303335;
+}
+
+.wd-trending-wrap {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #303335;
+}
+
+.wd-trending {
+  padding: 10px 0;
+}
+
+.wd-trending-first {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wd-trending-more {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.wd-trending-title {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.wd-post-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #303335;
+}
+
+.wd-post-author {
+  display: flex;
+  font-size: 13px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.wd-post-gray {
+  color: rgb(110, 118, 125);
+}
+
+.wd-post-topic {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.wd-post-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+}
+
+.wd-post-icon {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 3px;
+}
