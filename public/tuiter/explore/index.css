@@ -15,24 +15,26 @@ body {
   margin-top: 10px;
 }
 
-.wd-input-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.wd-search-input {
+  position: relative;
+  width: 90%;
   height: 100%;
-  width: 10%;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  background-color: darkgray;
+  display: flex;
+  align-items: center;
+}
+
+
+.wd-input-label {
+  position: absolute;
+  left: 20px;
 }
 
 .wd-input {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 20px;
   height: 100%;
-  width: 80%;
+  width: 100%;
   background-color: darkgray;
-  padding: 0;
+  padding-left: 50px;
   margin-right: 12px;
   border: 0;
   font-size: 18px;
