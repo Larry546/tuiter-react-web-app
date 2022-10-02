@@ -520,36 +520,7 @@ and (max-width: 600px) {
     background-color: red;
     color: white;
   }
-}
 
-@media (min-width: 600px)
-and (max-width: 1200px) {
-  .media-query-div-eg {
-    background-color: blue;
-    color: white;
-  }
-
-  .media-query-p-eg {
-    background-color: yellow;
-    color: black;
-  }
-}
-
-@media (min-width: 1200px)
-and (max-width: 1800px) {
-  .media-query-div-eg {
-    background-color: red;
-    color: white;
-  }
-
-  .media-query-p-eg {
-    background-color: blue;
-    color: white;
-  }
-}
-
-@media (min-width: 0px)
-and (max-width: 600px) {
   .media-query-div {
     background-color: pink;
     color: white;
@@ -564,7 +535,17 @@ and (max-width: 600px) {
 }
 
 @media (min-width: 600px)
-and (max-width: 1000px) {
+and (max-width: 1200px) {
+  .media-query-div-eg {
+    background-color: blue;
+    color: white;
+  }
+
+  .media-query-p-eg {
+    background-color: yellow;
+    color: black;
+  }
+
   .media-query-div {
     background-color: green;
     color: white;
@@ -578,8 +559,18 @@ and (max-width: 1000px) {
   }
 }
 
-@media (min-width: 1000px)
-and (max-width: 1500px) {
+@media (min-width: 1200px)
+and (max-width: 1800px) {
+  .media-query-div-eg {
+    background-color: red;
+    color: white;
+  }
+
+  .media-query-p-eg {
+    background-color: blue;
+    color: white;
+  }
+  
   .media-query-div {
     background-color: purple;
     color: white;
@@ -592,3 +583,4 @@ and (max-width: 1500px) {
     transform: rotate(270deg);
   }
 }
+
