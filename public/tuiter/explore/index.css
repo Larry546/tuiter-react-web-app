@@ -4,10 +4,15 @@ body {
   font-family: Arial;
 }
 
+wd-explore {
+  width: 700px;
+}
+
 .wd-search-wrap {
   display: flex;
   align-items: center;
   height: 40px;
+  margin-top: 10px;
 }
 
 .wd-input-label {
