@@ -65,7 +65,9 @@ body {
 }
 
 .wd-nav li {
-  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   height: 30px;
 }
 
