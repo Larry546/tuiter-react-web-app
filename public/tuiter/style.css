@@ -11,7 +11,11 @@
 }
 
 .wd-gray {
-  color: rgb(110, 118, 125);
+  color: #72767a;
+}
+
+.wd-13 {
+  font-size: 13px;
 }
 
 .wd-gray-13 {

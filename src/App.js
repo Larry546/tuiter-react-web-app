@@ -13,6 +13,8 @@ function App() {
             HTML</a>
           <a className="App-navi" href="labs/a3/index.html">Assignment 3
             CSS</a>
+          <a className="App-navi" href="labs/a4/index.html">Assignment 4
+            Bootstrap</a>
           <a className="App-navi" href="tuiter/navigation.html">Tuiter</a>
           <a
               className="App-link"

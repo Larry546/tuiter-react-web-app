@@ -1,63 +1,24 @@
 body {
   background-color: black;
   color: white;
-  font-family: Arial;
 }
 
-.wd-search-wrap {
-  display: flex;
-  height: 40px;
-  margin-top: 10px;
-}
-
-.wd-search-input {
-  position: relative;
-  width: 90%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-
-.wd-input-label {
-  position: absolute;
-  left: 20px;
+.wd-search {
+  height: 45px;
 }
 
 .wd-input {
   border-radius: 20px;
   height: 100%;
   width: 100%;
-  background-color: darkgray;
-  padding-left: 50px;
-  margin-right: 12px;
-  border: 0;
-  font-size: 18px;
+  background-color: #212327;
 }
 
 .wd-input::placeholder {
-  color: lightgray;
-}
-
-.wd-gear {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  width: 10%;
-  font-size: 2em;
-  color: rgb(29, 161, 242);
-}
-
-.wd-nav-wrap {
-
+  color: #72767a;
 }
 
 .wd-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin-bottom: 0;
-  font-weight: bold;
   color: rgb(110, 118, 125);
 }
 
@@ -65,81 +26,8 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 30px;
 }
 
 .wd-nav-selected {
-  color: rgb(29, 161, 242);
   border-bottom: 4px solid rgb(29, 161, 242);
-}
-
-.wd-divide {
-  background-color: #17181c;
-  height: 15px;
-  border-top: 3px solid #303335;
-}
-
-.wd-trending-wrap {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #303335;
-}
-
-.wd-trending {
-  padding: 10px 0;
-}
-
-.wd-trending-first {
-  display: flex;
-  justify-content: space-between;
-}
-
-.wd-trending-more {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 10px;
-}
-
-.wd-trending-title {
-  font-weight: 600;
-  margin: 5px 0;
-}
-
-.wd-post-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #303335;
-}
-
-.wd-post-author {
-  display: flex;
-  font-size: 13px;
-  margin-bottom: 8px;
-  align-items: center;
-}
-
-.wd-post-gray {
-  color: rgb(110, 118, 125);
-}
-
-.wd-post-topic {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.wd-post-image {
-  height: 100px;
-  width: 100px;
-  border-radius: 20px;
-}
-
-.wd-post-icon {
-  height: 10px;
-  width: 10px;
-  background-color: white;
-  border-radius: 5px;
-  margin: 0 3px;
 }
