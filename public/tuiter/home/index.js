@@ -1,0 +1,24 @@
+import NavigationSidebar from "../NavigationSidebar/index.js";
+import PostSummaryList from "../PostSummaryList/index.js";
+import PostList from "../PostList/index.js";
+
+function home() {
+  $('#wd-explore').append(`
+       <div class="row mt-2">
+          <div class="col-2 col-lg-1 col-xl-2 col-xxl-2 pt-3">
+            ${NavigationSidebar()}
+          </div>
+          <div class="col-10 col-lg-7 col-xl-6 col-xxl-6 pt-3 ps-3 pe-3">
+            ${PostList()}
+          </div>
+          <div class="col-4 pt-3 d-none d-lg-block d-xl-block d-xxl-block">
+            ${PostSummaryList()}
+          </div>
+       </div>
+   `);
+
+  $('#home-nav').addClass('active')
+  $('#postsummary').addClass('rounded-4')
+}
+
+$(home);
