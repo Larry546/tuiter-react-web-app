@@ -11,7 +11,7 @@ const explore = () => {
           <div class="col-10 col-lg-7 col-xl-6 col-xxl-6 pt-1 ps-4 pe-4">
             ${ExploreComponent()}
           </div>
-          <div class="col-4 d-none d-lg-block d-xl-block d-xxl-block">
+          <div class="col-4 d-none d-lg-block d-xl-block d-xxl-block pt-3">
             ${WhoToFollowList()}
           </div>
        </div>
