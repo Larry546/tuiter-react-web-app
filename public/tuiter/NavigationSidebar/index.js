@@ -1,54 +1,68 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
   return (`
       <div class="list-group">
         <a class="list-group-item">
           <i class="fa-solid fa-t"></i>
         </a>
-          <a id="home-nav" class="list-group-item d-flex align-items-center" 
-          href="../home/index.html">
+          <a class="list-group-item d-flex align-items-center 
+                    ${active === "home" ? "active" : ""}" 
+                    href="../home/index.html">
             <i class="fa-solid fa-house col-12 col-xl-2 col-xxl-2"></i>
             <div class="col-10 d-none d-xl-block d-xxl-block">
               Home
             </div>
           </a>
-          <a id="explore-nav" class="list-group-item d-flex align-items-center"
-             href="../explore/index.html">
+          <a class="list-group-item d-flex align-items-center
+                    ${active === "explore" ? "active" : ""}"
+                    href="../explore/index.html">
             <i class="fa-solid fa-hashtag col-12 col-xl-2 col-xxl-2"></i>
             <div class="col-10 d-none d-xl-block d-xxl-block">
               Explore
             </div>
           </a>
-          <a id="notifications-nav" class="list-group-item d-flex align-items-center" href="#">
+          <a class="list-group-item d-flex align-items-center
+                    ${active === "notifications" ? "active" : ""}" 
+             href="#">
             <i class="fa-regular fa-bell col-12 col-xl-2 col-xxl-2"></i>
             <div class="col-10 d-none d-xl-block d-xxl-block">
               Notifications
             </div>
           </a>
-          <a id="messages-nav" class="list-group-item d-flex align-items-center" href="#">
+          <a class="list-group-item d-flex align-items-center
+                    ${active === "messages" ? "active" : ""}" 
+                    href="#">
             <i class="fa-regular fa-envelope col-12 col-xl-2 col-xxl-2"></i>
             <div class="col-10 d-none d-xl-block d-xxl-block">
               Messages
             </div>
           </a>
-          <a id="bookmarks-nav" class="list-group-item d-flex align-items-center" href="#">
+          <a class="list-group-item d-flex align-items-center
+                    ${active === "bookmarks" ? "active" : ""}" 
+                    href="#">
             <i class="fa-regular fa-bookmark col-12 col-xl-2 col-xxl-2"></i>
             <div class="col-10 d-none d-xl-block d-xxl-block">
               Bookmarks
             </div>
           </a>
-          <a id="lists-nav" class="list-group-item d-flex align-items-center" href="#">
+          <a class="list-group-item d-flex align-items-center
+                    ${active === "lists" ? "active" : ""}" 
+                    href="#">
             <i class="fa-solid fa-list col-12 col-xl-2 col-xxl-2"></i>
             <div class="col-10 d-none d-xl-block d-xxl-block">
               Lists
             </div>
           </a>
-          <a id="profile-nav" class="list-group-item d-flex align-items-center" href="#">
+          <a class="list-group-item d-flex align-items-center
+                    ${active === "profile" ? "active" : ""}" 
+                    href="#">
             <i class="fa-regular fa-user col-12 col-xl-2 col-xxl-2"></i>
             <div class="col-10 d-none d-xl-block d-xxl-block">
               Profile
             </div>
           </a>
-          <a id="more-nav" class="list-group-item d-flex align-items-center" href="#">
+          <a class="list-group-item d-flex align-items-center
+                    ${active === "more" ? "active" : ""}" 
+                    href="#">
             <i class="fa-solid fa-ellipsis col-12 col-xl-2 col-xxl-2"></i>
             <div class="col-10 d-none d-xl-block d-xxl-block">
               More

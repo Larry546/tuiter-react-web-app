@@ -6,7 +6,7 @@ const explore = () => {
   $('#wd-explore').append(`
        <div class="row mt-2">
           <div class="col-2 col-lg-1 col-xl-2 col-xxl-2 pt-3">
-            ${NavigationSidebar()}
+            ${NavigationSidebar("explore")}
           </div>
           <div class="col-10 col-lg-7 col-xl-6 col-xxl-6 pt-1 ps-4 pe-4">
             ${ExploreComponent()}
@@ -16,8 +16,6 @@ const explore = () => {
           </div>
        </div>
    `);
-
-  $('#explore-nav').addClass('active')
 }
 
 $(explore);
