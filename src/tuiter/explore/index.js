@@ -27,21 +27,20 @@ const ExploreComponent = () => {
         <div className="row">
           <ul className="d-flex justify-content-between fw-semibold nav nav-tabs mt-2 mb-2 border-0">
             <li className="nav-item">
-              <a className="nav-link border-0 rounded-0 active" href="#">For
+              <a className="nav-link border-0 rounded-0 active">For
                 you</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link border-0 rounded-0" href="#">Trending</a>
+              <a className="nav-link border-0 rounded-0">Trending</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link border-0 rounded-0" href="#">News</a>
+              <a className="nav-link border-0 rounded-0">News</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link border-0 rounded-0" href="#">Sports</a>
+              <a className="nav-link border-0 rounded-0">Sports</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link border-0 rounded-0"
-                 href="#">Entertainment</a>
+              <a className="nav-link border-0 rounded-0">Entertainment</a>
             </li>
           </ul>
         </div>
