@@ -5,7 +5,9 @@ const HomeItem = ({post}) => {
       <li className="list-group-item bg-black">
         <div className="row">
           <div className="col-1 d-flex justify-content-center">
-            <img src={require("../img/" + post.avatar)} width="48px"
+            <img src={require("../img/" + post.avatar)}
+                 alt=""
+                 width="48px"
                  height="48px"
                  className="rounded-circle"/>
           </div>
@@ -29,8 +31,11 @@ const HomeItem = ({post}) => {
 
             <div
                 className="rounded-4 border border-1 border-dark overflow-hidden mt-3">
-              <img src={require("../img/" + post.image)} width="100%"
-                   height="auto"/>
+              <img
+                  src={require("../img/" + post.image)}
+                  alt=""
+                  width="100%"
+                  height="auto"/>
               {!!post.imageTitle || !!post.imageContent || !!post.imageUrl
                   ?
                   <div
@@ -51,21 +56,21 @@ const HomeItem = ({post}) => {
             </div>
 
             <div className="row mt-3 text-dark nav nav-tabs border-0">
-              <a className="col-3 nav-link border-0 rounded-0 text-dark">
+              <div className="col-3 nav-link border-0 rounded-0 text-dark">
                 <i className="fa-regular fa-comment me-2"></i>
                 {post.reply}
-              </a>
-              <a className="col-3 nav-link border-0 rounded-0 text-dark">
+              </div>
+              <div className="col-3 nav-link border-0 rounded-0 text-dark">
                 <i className="fa-solid fa-retweet me-2"></i>
                 {post.retuit}
-              </a>
-              <a className="col-3 nav-link border-0 rounded-0 text-dark">
+              </div>
+              <div className="col-3 nav-link border-0 rounded-0 text-dark">
                 <i className="fa-regular fa-heart me-2"></i>
                 {post.like}
-              </a>
-              <a className="col-3 nav-link border-0 rounded-0 text-dark">
+              </div>
+              <div className="col-3 nav-link border-0 rounded-0 text-dark">
                 <i className="fa-solid fa-arrow-up-from-bracket"></i>
-              </a>
+              </div>
             </div>
           </div>
         </div>

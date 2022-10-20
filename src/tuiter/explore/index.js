@@ -27,27 +27,28 @@ const ExploreComponent = () => {
         <div className="row">
           <ul className="d-flex justify-content-between fw-semibold nav nav-tabs mt-2 mb-2 border-0">
             <li className="nav-item">
-              <a className="nav-link border-0 rounded-0 active">For
-                you</a>
+              <div className="nav-link border-0 rounded-0 active">For
+                you
+              </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link border-0 rounded-0">Trending</a>
+              <div className="nav-link border-0 rounded-0">Trending</div>
             </li>
             <li className="nav-item">
-              <a className="nav-link border-0 rounded-0">News</a>
+              <div className="nav-link border-0 rounded-0">News</div>
             </li>
             <li className="nav-item">
-              <a className="nav-link border-0 rounded-0">Sports</a>
+              <div className="nav-link border-0 rounded-0">Sports</div>
             </li>
             <li className="nav-item">
-              <a className="nav-link border-0 rounded-0">Entertainment</a>
+              <div className="nav-link border-0 rounded-0">Entertainment</div>
             </li>
           </ul>
         </div>
         <div className="row">
           <div className="position-relative p-0">
             <img src={StarShip} width="100%"
-                 height="auto"/>
+                 height="auto" alt={""}/>
             <h3 className="position-absolute bottom-0 ps-3">SpaceX's
               StarShip</h3>
           </div>
