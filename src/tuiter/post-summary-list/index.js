@@ -8,8 +8,7 @@ const PostSummaryList = () => {
   const paths = pathname.split('/')
   return (
       <div className="row">
-        <ul className={`list-group list-group-flush p-0 ${paths.length === 2
-        || paths[2] === "home" ? "rounded-4" : ""}`}>
+        <ul className={"list-group list-group-flush p-0"}>
           {posts.map(post =>
               <PostSummaryItem key={post._id} post={post}/>
           )}
