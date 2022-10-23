@@ -43,7 +43,7 @@ const PostSummaryItem = (
           </div>
           <div className="col-3 d-flex justify-content-end">
             <img className="rounded-4"
-                 src={require("../img/" + post.image)}
+                 src={require(`../img/${post.image}`)}
                  alt=""
                  width="auto"
                  height={100}/>

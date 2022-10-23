@@ -3,7 +3,6 @@ import WhoToFollowList from "./who-to-follow-list";
 import ExploreComponent from "./explore";
 import {Route, Routes} from "react-router";
 import HomeComponent from "./home";
-import PostSummaryList from "./post-summary-list";
 
 function Tuiter() {
   return (
@@ -21,11 +20,7 @@ function Tuiter() {
           </div>
           <div
               className="col-4 d-none d-lg-block d-xl-block d-xxl-block pt-3">
-            <Routes>
-              <Route index element={<PostSummaryList/>}/>
-              <Route path="home" element={<PostSummaryList/>}/>
-              <Route path="explore" element={<WhoToFollowList/>}/>
-            </Routes>
+            <WhoToFollowList/>
           </div>
         </div>
       </>
