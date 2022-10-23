@@ -1,9 +1,10 @@
 import React from "react";
-import posts from './posts.json';
 import PostSummaryItem from "./post-summary-item";
 import {useLocation} from "react-router-dom";
+import {useSelector} from "react-redux";
 
 const PostSummaryList = () => {
+  const posts = useSelector(state => state.tuits)
   const {pathname} = useLocation();
   const paths = pathname.split('/')
   return (

@@ -5,7 +5,7 @@ const HomeItem = ({post}) => {
       <li className="list-group-item bg-black">
         <div className="row">
           <div className="col-1 d-flex justify-content-center">
-            <img src={require("../img/" + post.avatar)}
+            <img src={require(`../img/${post.avatar}`)}
                  alt=""
                  width="48px"
                  height="48px"
