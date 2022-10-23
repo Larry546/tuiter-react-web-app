@@ -21,7 +21,7 @@ const PostSummaryItem = (
 
             <div className="d-flex">
               <div className="fw-semibold">
-                {post.userName}
+                {post.username}
               </div>
               {post.time ? <>
                 <div className="ms-1">
@@ -43,7 +43,7 @@ const PostSummaryItem = (
           </div>
           <div className="col-3 d-flex justify-content-end">
             <img className="rounded-4"
-                 src={require(`../img/${post.image}`)}
+                 src={require(`../img/${post.avatar}`)}
                  alt=""
                  width="auto"
                  height={100}/>

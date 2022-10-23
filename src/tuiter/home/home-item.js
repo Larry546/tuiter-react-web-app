@@ -32,7 +32,7 @@ const HomeItem = ({post}) => {
             <div
                 className="rounded-4 border border-1 border-dark overflow-hidden mt-3">
               <img
-                  src={require("../img/" + post.image)}
+                  src={require(`../img/${post.image}`)}
                   alt=""
                   width="100%"
                   height="auto"/>
@@ -48,7 +48,7 @@ const HomeItem = ({post}) => {
                     </div> : null}
                     {!!post.imageUrl
                         ? <a className="text-decoration-none text-dark"
-                             href={"https://www." + post.imageUrl}>
+                             href={`https://www.${post.imageUrl}`}>
                           <i className="fa-solid fa-link"></i>
                           {post.imageUrl}
                         </a> : null}
