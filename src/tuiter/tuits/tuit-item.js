@@ -1,4 +1,6 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "./tuits-reducer";
 
 const TuitItem = ({
   tuit = {
@@ -16,10 +18,15 @@ const TuitItem = ({
     "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
   }
 }) => {
+
+  const dispatch = useDispatch();
+  const deleteTuitHandler = (id) => {
+    dispatch(deleteTuit(id));
+  }
   return (
       <li className="list-group-item bg-black pt-3">
         <div className="row">
-          <div className="col-2 d-flex justify-content-center">
+          <div className="col-auto d-flex justify-content-center">
             <img src={require(`../img/${tuit.avatar}`)}
                  alt=""
                  width="48px"
@@ -37,8 +44,14 @@ const TuitItem = ({
                 <div className="text-dark">{tuit.handle}</div>
                 <div className="ms-2 text-dark">- {tuit.time}</div>
               </div>
+              <div
+                  className="col-1"
+                  onClick={() => {
+                    deleteTuitHandler(tuit._id)
+                  }}>
+                <i className="fa-regular fa-circle-xmark float-end"></i>
+              </div>
 
-              <i className="fa-solid fa-ellipsis fs-5"></i>
             </div>
             <div className="text-white">
               {tuit.content}
