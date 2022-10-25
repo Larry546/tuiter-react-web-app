@@ -1,6 +1,5 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
-import StarShip from "../img/starship.webp";
 
 const ExploreComponent = () => {
   return (
@@ -47,7 +46,7 @@ const ExploreComponent = () => {
         </div>
         <div className="row">
           <div className="position-relative p-0">
-            <img src={StarShip} width="100%"
+            <img src={"/images/starship.webp"} width="100%"
                  height="auto" alt={""}/>
             <h3 className="position-absolute bottom-0 ps-3">SpaceX's
               StarShip</h3>
