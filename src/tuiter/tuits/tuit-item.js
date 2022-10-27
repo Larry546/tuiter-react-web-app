@@ -1,23 +1,9 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import {deleteTuit} from "./tuits-reducer";
+import TuitStats from "./tuit-stats";
 
-const TuitItem = ({
-  tuit = {
-    "_id": 234,
-    "topic": "Space",
-    "username": "SpaceX",
-    "time": "2h",
-    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
-    "avatar": "java.png",
-    "liked": true,
-    "reply": 123,
-    "retuit": 432,
-    "like": 2345,
-    "handle": "@spacex",
-    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
-  }
-}) => {
+const TuitItem = ({tuit}) => {
 
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
@@ -59,25 +45,10 @@ const TuitItem = ({
             <div>
               {tuit.tuit}
             </div>
-            <div className="row mt-2 text-dark nav nav-tabs border-0">
-              <div className="col-3 nav-link border-0 rounded-0 text-dark">
-                <i className="fa-regular fa-comment me-2"></i>
-                {tuit.reply}
-              </div>
-              <div className="col-3 nav-link border-0 rounded-0 text-dark">
-                <i className="fa-solid fa-retweet me-2"></i>
-                {tuit.retuit}
-              </div>
-              <div className="col-3 nav-link border-0 rounded-0 text-dark">
-                {tuit.liked ?
-                    <i className="fa-solid fa-heart me-2 text-danger"></i> :
-                    <i className="fa-regular fa-heart me-2"></i>}
-                {tuit.like}
-              </div>
-              <div className="col-3 nav-link border-0 rounded-0 text-dark">
-                <i className="fa-solid fa-arrow-up-from-bracket"></i>
-              </div>
-            </div>
+            <TuitStats reply={tuit.reply}
+                       retuit={tuit.retuit}
+                       liked={tuit.liked}
+                       like={tuit.like}/>
           </div>
         </div>
       </li>
