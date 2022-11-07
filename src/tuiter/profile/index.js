@@ -68,6 +68,12 @@ const ProfileComponent = () => {
             </div>
           </div>
 
+          {info.website &&
+              <div>
+                <i className="fa-solid fa-link me-2"></i>
+                {info.website}
+              </div>}
+
           <div className="mt-3 d-flex">
             <div className="me-4 d-flex">
               <div className="text-white fw-bolder me-2">
