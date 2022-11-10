@@ -1,13 +1,13 @@
 import React from "react";
-import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer";
 import TuitStats from "./tuit-stats";
+import {useDispatch} from "react-redux";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = ({tuit}) => {
 
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
   return (
       <li className="list-group-item bg-black pt-3">
@@ -45,10 +45,7 @@ const TuitItem = ({tuit}) => {
             <div>
               {tuit.tuit}
             </div>
-            <TuitStats reply={tuit.reply}
-                       retuit={tuit.retuit}
-                       liked={tuit.liked}
-                       like={tuit.like}/>
+            <TuitStats tuit={tuit}/>
           </div>
         </div>
       </li>
