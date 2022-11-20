@@ -11,11 +11,6 @@ const templateTuit = {
   ...currentUser,
   "topic": "Space",
   "time": "2h",
-  "liked": false,
-  "reply": 0,
-  "retuit": 0,
-  "like": 0,
-  "dislike": 0
 }
 
 export const findTuitsThunk = createAsyncThunk(
